@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+    }
+    
+    .red{
+      background-color: #E72F24;
+    }
+
+    .Yellow{
+      background-color: #F9D01E;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .Black{
+      background-color: #232629;
+    }
+
+    .White1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .White2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .White3{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .White4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .White5{
+      background-color: #F0F1EC;
+    }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red color"></div>
+    <div class="White1 color"></div>
+    
+    <div class="White2 color"></div>
+    <div class="White3 color"></div>
+    <div class="blue color"></div>
+    <div class="White4 color"></div>
+
+    <div class="White5 color"></div>
+    <div class="Yellow color"></div>
+    <div class="Black color"></div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
